@@ -1,0 +1,13 @@
+package gitDevPilot.backend.repository;
+
+import java.util.Optional;
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import gitDevPilot.backend.entity.User;
+
+public interface UserRepository extends JpaRepository<User, UUID> {
+
+    Optional<User> findByGithubId(long githubId);
+}

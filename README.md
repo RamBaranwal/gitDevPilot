@@ -1,8 +1,8 @@
-# DevPilot
+# Synapse
 
 **Chat with your code.** An AI-powered assistant for exploring, understanding, and querying your GitHub repositories.
 
-DevPilot turns your codebase into a conversational interface. By syncing your GitHub repositories and indexing them into a vector database, DevPilot allows you to ask questions about your architecture, find specific implementations, and understand complex logic through a Retrieval-Augmented Generation (RAG) pipeline.
+Synapse turns your codebase into a conversational interface. By syncing your GitHub repositories and indexing them into a vector database, Synapse allows you to ask questions about your architecture, find specific implementations, and understand complex logic through a Retrieval-Augmented Generation (RAG) pipeline.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ DevPilot turns your codebase into a conversational interface. By syncing your Gi
 
 Modern codebases are massive, and finding the context you need across hundreds of files can be tedious. Keyword searches often fail to capture semantic meaning, and standard AI assistants lack the specific context of your private repositories.
 
-DevPilot solves this by bringing the AI directly to your code:
+Synapse solves this by bringing the AI directly to your code:
 - Authenticates securely via **GitHub OAuth** to access your repositories.
 - Syncs and fetches the repository tree directly from the GitHub API.
 - Processes, chunks, and embeds your source code into a high-dimensional vector space using OpenAI embeddings.
@@ -111,7 +111,7 @@ This guarantees that the AI mentor's responses are grounded in your actual imple
 ## Project Structure
 
 ```text
-gitDevPilot/
+gitSynapse/
 ├── backend/            # Spring Boot backend application
 │   ├── src/main/java/  # Java source code
 │   └── src/main/resources/ # application.properties & Flyway migrations

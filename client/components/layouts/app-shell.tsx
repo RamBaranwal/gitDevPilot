@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LogOut, Settings } from "lucide-react";
 
-import { DevPilotIcon } from "@/components/icons/devpilot-icon";
+import { SynapseIcon } from "@/components/icons/devpilot-icon";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { useCurrentUser, useLogout } from "@/hooks/use-auth";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -65,7 +65,7 @@ export function AppShell({
                             <span className="text-white font-bold text-sm leading-none">λ</span>
                         </div>
                         <div className="flex flex-col">
-                            <span className="font-bold text-base text-foreground leading-tight">DevPilot</span>
+                            <span className="font-bold text-base text-foreground leading-tight">Synapse</span>
                             <span className="text-xs text-muted-foreground">Chat with your code</span>
                         </div>
                     </Link>

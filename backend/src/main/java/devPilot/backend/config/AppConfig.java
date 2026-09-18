@@ -13,8 +13,8 @@ import org.springframework.web.client.RestClient;
 public class AppConfig {
 
     @Bean
-    RestClient.Builder restClientBuilder() {
-        return RestClient.builder().requestFactory(new org.springframework.http.client.JdkClientHttpRequestFactory());
+    org.springframework.boot.web.client.RestClientCustomizer restClientCustomizer() {
+        return builder -> builder.requestFactory(new org.springframework.http.client.JdkClientHttpRequestFactory());
     }
 
     @Bean(name = "indexingExecutor")

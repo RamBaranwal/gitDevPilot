@@ -56,7 +56,7 @@ function LoginContent() {
           <div className="flex size-7 items-center justify-center rounded-full bg-teal-500 shadow-sm">
             <span className="text-white font-bold text-sm leading-none">λ</span>
           </div>
-          <span className="font-bold text-base text-foreground leading-tight">DevPilot</span>
+          <span className="font-bold text-base text-foreground leading-tight">Synapse</span>
         </Link>
         <ModeToggle />
       </header>
